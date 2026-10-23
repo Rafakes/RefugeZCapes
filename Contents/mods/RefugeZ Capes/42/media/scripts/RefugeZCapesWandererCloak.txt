@@ -1,0 +1,46 @@
+module RefugeZCapes
+{
+    item RefugeWandererCloak
+    {
+        DisplayName = Refuge Wanderer Cape,
+        DisplayCategory = ProtectiveGear,
+        ItemType = base:clothing,
+        Weight = 1.3,
+        Icon = RZC_RefugeWandererCloak,
+        BloodLocation = ShirtNoSleeves;Neck,
+        BodyLocation = base:scarf,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        ClothingItem = RZC_WandererCloak,
+        CombatSpeedModifier = 0.99,
+        Insulation = 0.08,
+        WaterResistance = 0.04,
+        WindResistance = 0.08,
+        Tags = base:ignorezombiedensity,
+        WorldStaticModel = RZC_WandererCloak_Ground,
+    }
+
+    model RZC_WandererCloak_Ground
+    {
+        mesh = Static/Clothes/RZC_WandererCloak_Ground,
+        texture = Clothes/RefugeZCapes/WandererCloak/RefugeWandererCloak,
+    }
+
+    craftRecipe RZC_SewRefugeWandererCloak
+    {
+        timedAction = SewingCloth,
+        time = 1600,
+        Tags = InHandCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:3,
+        xpAward = Tailoring:18,
+        inputs
+        {
+            item 1 tags[base:sewingneedle] mode:keep flags[MayDegradeLight],
+            item 1 [RefugeZCapes.RefugeWoolShawl] mode:destroy,
+            item 4 [Base.RippedSheets],
+            item 2 tags[base:thread],
+        }
+        outputs { item 1 RefugeZCapes.RefugeWandererCloak, }
+    }
+}

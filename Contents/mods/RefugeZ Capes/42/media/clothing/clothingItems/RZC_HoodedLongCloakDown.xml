@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+  <m_GUID>b80881d6-ebe1-59d0-ae5b-28b12d88e1f8</m_GUID>
+  <m_MaleModel>Skinned/Clothes/RZC_HoodedLongCloakDownFront_M</m_MaleModel>
+  <m_FemaleModel>Skinned/Clothes/RZC_HoodedLongCloakDownFront_F</m_FemaleModel>
+  <m_Static>false</m_Static>
+  <m_AllowRandomHue>false</m_AllowRandomHue>
+  <m_AllowRandomTint>false</m_AllowRandomTint>
+  <m_AttachBone />
+  <textureChoices>Clothes/RefugeZCapes/HoodedLongCloak/RefugeCloak</textureChoices>
+</clothingItem>

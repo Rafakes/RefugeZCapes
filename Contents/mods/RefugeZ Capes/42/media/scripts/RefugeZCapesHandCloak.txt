@@ -1,0 +1,91 @@
+module RefugeZCapes
+{
+    item RefugeCloak_Hand
+    {
+        DisplayName = Refuge Red Hand Wool Cape,
+        DisplayCategory = ProtectiveGear,
+        ItemType = base:clothing,
+        Weight = 1.0,
+        Icon = RZC_RefugeCloak_Hand,
+        BloodLocation = ShirtNoSleeves;Neck,
+        BodyLocation = base:scarf,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        ClothingItem = RZC_Cloak_Hand,
+        CombatSpeedModifier = 0.99,
+        Insulation = 0.1,
+        WaterResistance = 0.1,
+        WindResistance = 0.1,
+        Tags = base:ignorezombiedensity,
+        WorldStaticModel = RZC_Cloak_Hand_Ground,
+    }
+
+    model RZC_Cloak_Hand_Ground
+    {
+        mesh = Static/Clothes/RZC_OwnCloak_Ground,
+        texture = Clothes/RefugeZCapes/CloakShort/RefugeCloak_Hand,
+    }
+
+    craftRecipe RZC_KnitRefugeCloak_Hand
+    {
+        timedAction = Knitting,
+        time = 2000,
+        Tags = InHandCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:4,
+        xpAward = Tailoring:15,
+        inputs
+        {
+            item 1 tags[base:knittingneedles] mode:keep,
+            item 1 tags[base:sewingneedle] mode:keep flags[MayDegradeLight],
+            item 2 tags[base:thread],
+            item 4 [Base.Yarn],
+        }
+        outputs { item 1 RefugeZCapes.RefugeCloak_Hand, }
+    }
+
+    item RefugeLongCloak_Hand
+    {
+        DisplayName = Refuge Red Hand Long Wool Cape,
+        DisplayCategory = ProtectiveGear,
+        ItemType = base:clothing,
+        Weight = 1.3,
+        Icon = RZC_RefugeLongCloak_Hand,
+        BloodLocation = ShirtNoSleeves;Neck,
+        BodyLocation = base:scarf,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        ClothingItem = RZC_LongCloak_Hand,
+        CombatSpeedModifier = 0.99,
+        Insulation = 0.1,
+        WaterResistance = 0.1,
+        WindResistance = 0.1,
+        Tags = base:ignorezombiedensity,
+        WorldStaticModel = RZC_LongCloak_Hand_Ground,
+    }
+
+    model RZC_LongCloak_Hand_Ground
+    {
+        mesh = Static/Clothes/RZC_LongCloak_Ground,
+        texture = Clothes/RefugeZCapes/CloakLong/RefugeCloak_Hand,
+    }
+
+    craftRecipe RZC_KnitRefugeLongCloak_Hand
+    {
+        timedAction = Knitting,
+        time = 2600,
+        Tags = InHandCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:4,
+        xpAward = Tailoring:20,
+        inputs
+        {
+            item 1 tags[base:knittingneedles] mode:keep,
+            item 1 tags[base:sewingneedle] mode:keep flags[MayDegradeLight],
+            item 3 tags[base:thread],
+            item 6 [Base.Yarn],
+        }
+        outputs { item 1 RefugeZCapes.RefugeLongCloak_Hand, }
+    }
+
+}

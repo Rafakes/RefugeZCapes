@@ -1,0 +1,46 @@
+module RefugeZCapes
+{
+    item RefugeHunterCloak
+    {
+        DisplayName = Refuge Hunter Cape,
+        DisplayCategory = ProtectiveGear,
+        ItemType = base:clothing,
+        Weight = 1.2,
+        Icon = RZC_RefugeHunterCloak,
+        BloodLocation = ShirtNoSleeves;Neck,
+        BodyLocation = base:scarf,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        ClothingItem = RZC_HunterCloak,
+        CombatSpeedModifier = 0.99,
+        Insulation = 0.09,
+        WaterResistance = 0.08,
+        WindResistance = 0.09,
+        Tags = base:ignorezombiedensity,
+        WorldStaticModel = RZC_HunterCloak_Ground,
+    }
+
+    model RZC_HunterCloak_Ground
+    {
+        mesh = Static/Clothes/RZC_HunterCloak_Ground,
+        texture = Clothes/RefugeZCapes/HunterCloak/RefugeHunterCloak,
+    }
+
+    craftRecipe RZC_SewRefugeHunterCloak
+    {
+        timedAction = SewingCloth,
+        time = 1600,
+        Tags = InHandCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:3,
+        xpAward = Tailoring:18,
+        inputs
+        {
+            item 1 tags[base:sewingneedle] mode:keep flags[MayDegradeLight],
+            item 1 [RefugeZCapes.RefugeWoolShawl] mode:destroy,
+            item 2 [Base.LeatherStrips],
+            item 2 tags[base:thread],
+        }
+        outputs { item 1 RefugeZCapes.RefugeHunterCloak, }
+    }
+}

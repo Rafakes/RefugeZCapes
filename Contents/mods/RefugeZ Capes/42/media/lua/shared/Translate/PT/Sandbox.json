@@ -1,0 +1,7 @@
+{
+    "Sandbox_RefugeZCapes": "RefugeZ Capes",
+    "Sandbox_RefugeZCapes_EnableLoot": "Gerar capas, xales e asas no saque",
+    "Sandbox_RefugeZCapes_EnableLoot_tooltip": "Ativado por predefinição. Desativado, o mod não acrescenta os seus itens ao saque do mundo. Saque já gerado e fabrico não são afetados.",
+    "Sandbox_RefugeZCapes_LootWeight": "Peso do saque por item",
+    "Sandbox_RefugeZCapes_LootWeight_tooltip": "O padrão 0,005 é extremamente raro. Valores mais altos aumentam a probabilidade em guarda-roupas e lojas de roupa; 0 desativa o saque."
+}

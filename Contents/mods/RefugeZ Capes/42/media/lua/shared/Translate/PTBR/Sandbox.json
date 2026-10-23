@@ -1,0 +1,7 @@
+{
+    "Sandbox_RefugeZCapes": "RefugeZ Capes",
+    "Sandbox_RefugeZCapes_EnableLoot": "Gerar capas, xales e asas no loot",
+    "Sandbox_RefugeZCapes_EnableLoot_tooltip": "Ativado por padrão. Desativado, o mod não adiciona seus itens ao loot do mundo. Loot já gerado e fabricação não são afetados.",
+    "Sandbox_RefugeZCapes_LootWeight": "Peso do loot por item",
+    "Sandbox_RefugeZCapes_LootWeight_tooltip": "O padrão 0,005 é super raro. Valores maiores aumentam a chance em guarda-roupas e lojas de roupas; 0 desativa o loot."
+}

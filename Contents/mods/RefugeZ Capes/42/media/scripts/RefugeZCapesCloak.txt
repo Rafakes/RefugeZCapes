@@ -1,0 +1,91 @@
+module RefugeZCapes
+{
+item RefugeCloak
+    {
+        DisplayName = Refuge Wool Cape,
+        DisplayCategory = ProtectiveGear,
+        ItemType = base:clothing,
+        Weight = 1.0,
+        Icon = RZC_RefugeCloak,
+        BloodLocation = ShirtNoSleeves;Neck,
+        BodyLocation = base:scarf,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        ClothingItem = RZC_Cloak,
+
+
+
+        CombatSpeedModifier = 0.99,
+        Insulation = 0.1,
+        WaterResistance = 0.1,
+        WindResistance = 0.1,
+        Tags = base:ignorezombiedensity,
+        WorldStaticModel = RZC_Cloak_Ground,
+    }
+item RefugeCloak_Moon
+    {
+        DisplayName = Refuge Moon Wool Cape,
+        DisplayCategory = ProtectiveGear,
+        ItemType = base:clothing,
+        Weight = 1.0,
+        Icon = RZC_RefugeCloak_Moon,
+        BloodLocation = ShirtNoSleeves;Neck,
+        BodyLocation = base:scarf,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        ClothingItem = RZC_Cloak_Moon,
+
+
+
+        CombatSpeedModifier = 0.99,
+        Insulation = 0.1,
+        WaterResistance = 0.1,
+        WindResistance = 0.1,
+        Tags = base:ignorezombiedensity,
+        WorldStaticModel = RZC_Cloak_Moon_Ground,
+    }
+ model RZC_Cloak_Ground
+ {
+  mesh = Static/Clothes/RZC_OwnCloak_Ground,
+  texture = Clothes/RefugeZCapes/CloakShort/RefugeCloak,
+ }
+ model RZC_Cloak_Moon_Ground
+ {
+  mesh = Static/Clothes/RZC_OwnCloak_Ground,
+  texture = Clothes/RefugeZCapes/CloakShort/RefugeCloak_Moon,
+ }
+ craftRecipe RZC_KnitRefugeCloak
+ {
+  timedAction = Knitting,
+  time = 2000,
+  Tags = InHandCraft,
+  category = Tailoring,
+  SkillRequired = Tailoring:2,
+  xpAward = Tailoring:15,
+  inputs
+  {
+   item 1 tags[base:knittingneedles] mode:keep,
+   item 1 tags[base:sewingneedle] mode:keep flags[MayDegradeLight],
+   item 2 tags[base:thread],
+   item 4 [Base.Yarn],
+  }
+  outputs { item 1 RefugeZCapes.RefugeCloak, }
+ }
+ craftRecipe RZC_KnitRefugeCloak_Moon
+ {
+  timedAction = Knitting,
+  time = 2000,
+  Tags = InHandCraft,
+  category = Tailoring,
+  SkillRequired = Tailoring:4,
+  xpAward = Tailoring:15,
+  inputs
+  {
+   item 1 tags[base:knittingneedles] mode:keep,
+   item 1 tags[base:sewingneedle] mode:keep flags[MayDegradeLight],
+   item 2 tags[base:thread],
+   item 4 [Base.Yarn],
+  }
+  outputs { item 1 RefugeZCapes.RefugeCloak_Moon, }
+ }
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+  <m_GUID>6724175e-277d-5de6-808a-f899815d8e69</m_GUID>
+  <m_MaleModel>Skinned/Clothes/RZC_ButterflyWings_M</m_MaleModel>
+  <m_FemaleModel>Skinned/Clothes/RZC_ButterflyWings_F</m_FemaleModel>
+  <m_Static>false</m_Static>
+  <m_AllowRandomHue>false</m_AllowRandomHue>
+  <m_AllowRandomTint>false</m_AllowRandomTint>
+  <m_AttachBone />
+  <textureChoices>Clothes/RefugeZCapes/ButterflyWings/RefugeButterflyWings_Violet</textureChoices>
+</clothingItem>

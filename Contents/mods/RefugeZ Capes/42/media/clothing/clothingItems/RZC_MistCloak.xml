@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+  <m_GUID>528a9ebe-0cf5-5144-8608-c196f3ec0e2c</m_GUID>
+  <m_MaleModel>Skinned/Clothes/RZC_MistCloak_M</m_MaleModel>
+  <m_FemaleModel>Skinned/Clothes/RZC_MistCloak_F</m_FemaleModel>
+  <m_Static>false</m_Static>
+  <m_AllowRandomHue>false</m_AllowRandomHue>
+  <m_AllowRandomTint>false</m_AllowRandomTint>
+  <m_AttachBone />
+  <textureChoices>Clothes/RefugeZCapes/MistCloak/RefugeMistCloak</textureChoices>
+</clothingItem>

@@ -1,0 +1,17 @@
+VERSION = 1,
+
+option RefugeZCapes.EnableLoot
+{
+    type = boolean,
+    default = true,
+    page = RefugeZCapes,
+    translation = RefugeZCapes_EnableLoot,
+}
+
+option RefugeZCapes.LootWeight
+{
+    type = double,
+    min = 0, max = 1, default = 0.005,
+    page = RefugeZCapes,
+    translation = RefugeZCapes_LootWeight,
+}

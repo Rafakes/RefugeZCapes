@@ -1,0 +1,85 @@
+module RefugeZCapes
+{
+    item RefugeLongCloak
+    {
+        DisplayName = Refuge Long Wool Cape,
+        DisplayCategory = ProtectiveGear,
+        ItemType = base:clothing,
+        Weight = 1.3,
+        Icon = RZC_RefugeLongCloak,
+        BloodLocation = ShirtNoSleeves;Neck,
+        BodyLocation = base:scarf,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        ClothingItem = RZC_LongCloak,
+        CombatSpeedModifier = 0.99,
+        Insulation = 0.1,
+        WaterResistance = 0.1,
+        WindResistance = 0.1,
+        Tags = base:ignorezombiedensity,
+        WorldStaticModel = RZC_LongCloak_Ground,
+    }
+    item RefugeLongCloak_Moon
+    {
+        DisplayName = Refuge Moon Long Wool Cape,
+        DisplayCategory = ProtectiveGear,
+        ItemType = base:clothing,
+        Weight = 1.3,
+        Icon = RZC_RefugeLongCloak_Moon,
+        BloodLocation = ShirtNoSleeves;Neck,
+        BodyLocation = base:scarf,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        ClothingItem = RZC_LongCloak_Moon,
+        CombatSpeedModifier = 0.99,
+        Insulation = 0.1,
+        WaterResistance = 0.1,
+        WindResistance = 0.1,
+        Tags = base:ignorezombiedensity,
+        WorldStaticModel = RZC_LongCloak_Moon_Ground,
+    }
+    model RZC_LongCloak_Ground
+    {
+        mesh = Static/Clothes/RZC_LongCloak_Ground,
+        texture = Clothes/RefugeZCapes/CloakLong/RefugeCloak,
+    }
+    model RZC_LongCloak_Moon_Ground
+    {
+        mesh = Static/Clothes/RZC_LongCloak_Ground,
+        texture = Clothes/RefugeZCapes/CloakLong/RefugeCloak_Moon,
+    }
+    craftRecipe RZC_KnitRefugeLongCloak
+    {
+        timedAction = Knitting,
+        time = 2600,
+        Tags = InHandCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:2,
+        xpAward = Tailoring:20,
+        inputs
+        {
+            item 1 tags[base:knittingneedles] mode:keep,
+            item 1 tags[base:sewingneedle] mode:keep flags[MayDegradeLight],
+            item 3 tags[base:thread],
+            item 6 [Base.Yarn],
+        }
+        outputs { item 1 RefugeZCapes.RefugeLongCloak, }
+    }
+    craftRecipe RZC_KnitRefugeLongCloak_Moon
+    {
+        timedAction = Knitting,
+        time = 2600,
+        Tags = InHandCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:4,
+        xpAward = Tailoring:20,
+        inputs
+        {
+            item 1 tags[base:knittingneedles] mode:keep,
+            item 1 tags[base:sewingneedle] mode:keep flags[MayDegradeLight],
+            item 3 tags[base:thread],
+            item 6 [Base.Yarn],
+        }
+        outputs { item 1 RefugeZCapes.RefugeLongCloak_Moon, }
+    }
+}

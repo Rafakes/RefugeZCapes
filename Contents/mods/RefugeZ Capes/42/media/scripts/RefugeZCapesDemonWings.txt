@@ -1,0 +1,140 @@
+module RefugeZCapes
+{
+    item DemonWings
+    {
+        DisplayName = Demon Wings,
+        DisplayCategory = ProtectiveGear,
+        ItemType = base:clothing,
+        Weight = 0.7,
+        Icon = RZC_DemonWings,
+        BodyLocation = RefugeZCapes:DemonWings,
+        ClothingItem = RZC_DemonWings,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        Insulation = 0,
+        WindResistance = 0,
+        WaterResistance = 0,
+        WorldStaticModel = RZC_DemonWings_Ground,
+    }
+
+    model RZC_DemonWings_Ground
+    {
+        mesh = Static/Clothes/RZC_DemonWings_Ground,
+        texture = Clothes/RefugeZCapes/DemonWings/RefugeDemonWings,
+    }
+
+    item DemonWings_RedBlack
+    {
+        DisplayName = Demon Wings (Red and Black),
+        DisplayCategory = ProtectiveGear,
+        ItemType = base:clothing,
+        Weight = 0.7,
+        Icon = RZC_DemonWings_RedBlack,
+        BodyLocation = RefugeZCapes:DemonWings,
+        ClothingItem = RZC_DemonWings_RedBlack,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        Insulation = 0,
+        WindResistance = 0,
+        WaterResistance = 0,
+        WorldStaticModel = RZC_DemonWings_RedBlack_Ground,
+    }
+
+    model RZC_DemonWings_RedBlack_Ground
+    {
+        mesh = Static/Clothes/RZC_DemonWings_Ground,
+        texture = Clothes/RefugeZCapes/DemonWings/RefugeDemonWings_RedBlack,
+    }
+
+    item DemonWings_Scarlet
+    {
+        DisplayName = Demon Wings (Scarlet),
+        DisplayCategory = ProtectiveGear,
+        ItemType = base:clothing,
+        Weight = 0.7,
+        Icon = RZC_DemonWings_Scarlet,
+        BodyLocation = RefugeZCapes:DemonWings,
+        ClothingItem = RZC_DemonWings_Scarlet,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        Insulation = 0,
+        WindResistance = 0,
+        WaterResistance = 0,
+        WorldStaticModel = RZC_DemonWings_Scarlet_Ground,
+    }
+
+    model RZC_DemonWings_Scarlet_Ground
+    {
+        mesh = Static/Clothes/RZC_DemonWings_Ground,
+        texture = Clothes/RefugeZCapes/DemonWings/RefugeDemonWings_Scarlet,
+    }
+
+    item DemonWings_Violet
+    {
+        DisplayName = Demon Wings (Violet),
+        DisplayCategory = ProtectiveGear,
+        ItemType = base:clothing,
+        Weight = 0.7,
+        Icon = RZC_DemonWings_Violet,
+        BodyLocation = RefugeZCapes:DemonWings,
+        ClothingItem = RZC_DemonWings_Violet,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        Insulation = 0,
+        WindResistance = 0,
+        WaterResistance = 0,
+        WorldStaticModel = RZC_DemonWings_Violet_Ground,
+    }
+
+    model RZC_DemonWings_Violet_Ground
+    {
+        mesh = Static/Clothes/RZC_DemonWings_Ground,
+        texture = Clothes/RefugeZCapes/DemonWings/RefugeDemonWings_Violet,
+    }
+
+    item DemonWings_Azure
+    {
+        DisplayName = Demon Wings (Azure),
+        DisplayCategory = ProtectiveGear,
+        ItemType = base:clothing,
+        Weight = 0.7,
+        Icon = RZC_DemonWings_Azure,
+        BodyLocation = RefugeZCapes:DemonWings,
+        ClothingItem = RZC_DemonWings_Azure,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        Insulation = 0,
+        WindResistance = 0,
+        WaterResistance = 0,
+        WorldStaticModel = RZC_DemonWings_Azure_Ground,
+    }
+
+    model RZC_DemonWings_Azure_Ground
+    {
+        mesh = Static/Clothes/RZC_DemonWings_Ground,
+        texture = Clothes/RefugeZCapes/DemonWings/RefugeDemonWings_Azure,
+    }
+
+    item DemonWings_Venom
+    {
+        DisplayName = Demon Wings (Venom),
+        DisplayCategory = ProtectiveGear,
+        ItemType = base:clothing,
+        Weight = 0.7,
+        Icon = RZC_DemonWings_Venom,
+        BodyLocation = RefugeZCapes:DemonWings,
+        ClothingItem = RZC_DemonWings_Venom,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        Insulation = 0,
+        WindResistance = 0,
+        WaterResistance = 0,
+        WorldStaticModel = RZC_DemonWings_Venom_Ground,
+    }
+
+    model RZC_DemonWings_Venom_Ground
+    {
+        mesh = Static/Clothes/RZC_DemonWings_Ground,
+        texture = Clothes/RefugeZCapes/DemonWings/RefugeDemonWings_Venom,
+    }
+}

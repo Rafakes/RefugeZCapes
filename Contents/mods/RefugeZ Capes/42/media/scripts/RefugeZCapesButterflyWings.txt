@@ -1,0 +1,117 @@
+module RefugeZCapes
+{
+    item ButterflyWings
+    {
+        DisplayName = Butterfly Wings,
+        DisplayCategory = ProtectiveGear,
+        ItemType = base:clothing,
+        Weight = 0.3,
+        Icon = RZC_ButterflyWings,
+        BodyLocation = RefugeZCapes:DemonWings,
+        ClothingItem = RZC_ButterflyWings,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        Insulation = 0,
+        WindResistance = 0,
+        WaterResistance = 0,
+        WorldStaticModel = RZC_ButterflyWings_Ground,
+    }
+
+    model RZC_ButterflyWings_Ground
+    {
+        mesh = Static/Clothes/RZC_ButterflyWings_Ground,
+        texture = Clothes/RefugeZCapes/ButterflyWings/RefugeButterflyWings,
+    }
+
+    item ButterflyWings_Pink
+    {
+        DisplayName = Butterfly Wings (Pink),
+        DisplayCategory = ProtectiveGear,
+        ItemType = base:clothing,
+        Weight = 0.3,
+        Icon = RZC_ButterflyWings_Pink,
+        BodyLocation = RefugeZCapes:DemonWings,
+        ClothingItem = RZC_ButterflyWings_Pink,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        Insulation = 0,
+        WindResistance = 0,
+        WaterResistance = 0,
+        WorldStaticModel = RZC_ButterflyWings_Pink_Ground,
+    }
+
+    model RZC_ButterflyWings_Pink_Ground
+    {
+        mesh = Static/Clothes/RZC_ButterflyWings_Ground,
+        texture = Clothes/RefugeZCapes/ButterflyWings/RefugeButterflyWings_Pink,
+    }
+
+    item ButterflyWings_Violet
+    {
+        DisplayName = Butterfly Wings (Violet),
+        DisplayCategory = ProtectiveGear,
+        ItemType = base:clothing,
+        Weight = 0.3,
+        Icon = RZC_ButterflyWings_Violet,
+        BodyLocation = RefugeZCapes:DemonWings,
+        ClothingItem = RZC_ButterflyWings_Violet,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        Insulation = 0,
+        WindResistance = 0,
+        WaterResistance = 0,
+        WorldStaticModel = RZC_ButterflyWings_Violet_Ground,
+    }
+
+    model RZC_ButterflyWings_Violet_Ground
+    {
+        mesh = Static/Clothes/RZC_ButterflyWings_Ground,
+        texture = Clothes/RefugeZCapes/ButterflyWings/RefugeButterflyWings_Violet,
+    }
+
+    item ButterflyWings_Emerald
+    {
+        DisplayName = Butterfly Wings (Emerald),
+        DisplayCategory = ProtectiveGear,
+        ItemType = base:clothing,
+        Weight = 0.3,
+        Icon = RZC_ButterflyWings_Emerald,
+        BodyLocation = RefugeZCapes:DemonWings,
+        ClothingItem = RZC_ButterflyWings_Emerald,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        Insulation = 0,
+        WindResistance = 0,
+        WaterResistance = 0,
+        WorldStaticModel = RZC_ButterflyWings_Emerald_Ground,
+    }
+
+    model RZC_ButterflyWings_Emerald_Ground
+    {
+        mesh = Static/Clothes/RZC_ButterflyWings_Ground,
+        texture = Clothes/RefugeZCapes/ButterflyWings/RefugeButterflyWings_Emerald,
+    }
+
+    item ButterflyWings_Gold
+    {
+        DisplayName = Butterfly Wings (Gold),
+        DisplayCategory = ProtectiveGear,
+        ItemType = base:clothing,
+        Weight = 0.3,
+        Icon = RZC_ButterflyWings_Gold,
+        BodyLocation = RefugeZCapes:DemonWings,
+        ClothingItem = RZC_ButterflyWings_Gold,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        Insulation = 0,
+        WindResistance = 0,
+        WaterResistance = 0,
+        WorldStaticModel = RZC_ButterflyWings_Gold_Ground,
+    }
+
+    model RZC_ButterflyWings_Gold_Ground
+    {
+        mesh = Static/Clothes/RZC_ButterflyWings_Ground,
+        texture = Clothes/RefugeZCapes/ButterflyWings/RefugeButterflyWings_Gold,
+    }
+}

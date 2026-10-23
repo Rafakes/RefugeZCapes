@@ -1,0 +1,46 @@
+module RefugeZCapes
+{
+    item RefugeMistCloak
+    {
+        DisplayName = Refuge Mist Cape,
+        DisplayCategory = ProtectiveGear,
+        ItemType = base:clothing,
+        Weight = 1.2,
+        Icon = RZC_RefugeMistCloak,
+        BloodLocation = ShirtNoSleeves;Neck,
+        BodyLocation = base:scarf,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        ClothingItem = RZC_MistCloak,
+        CombatSpeedModifier = 0.99,
+        Insulation = 0.09,
+        WaterResistance = 0.06,
+        WindResistance = 0.08,
+        Tags = base:ignorezombiedensity,
+        WorldStaticModel = RZC_MistCloak_Ground,
+    }
+
+    model RZC_MistCloak_Ground
+    {
+        mesh = Static/Clothes/RZC_MistCloak_Ground,
+        texture = Clothes/RefugeZCapes/MistCloak/RefugeMistCloak,
+    }
+
+    craftRecipe RZC_SewRefugeMistCloak
+    {
+        timedAction = SewingCloth,
+        time = 1700,
+        Tags = InHandCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:4,
+        xpAward = Tailoring:20,
+        inputs
+        {
+            item 1 tags[base:sewingneedle] mode:keep flags[MayDegradeLight],
+            item 1 [RefugeZCapes.RefugeLongCloak] mode:destroy,
+            item 3 [Base.Yarn],
+            item 2 tags[base:thread],
+        }
+        outputs { item 1 RefugeZCapes.RefugeMistCloak, }
+    }
+}

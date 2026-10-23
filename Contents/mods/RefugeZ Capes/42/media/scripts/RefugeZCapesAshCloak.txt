@@ -1,0 +1,45 @@
+module RefugeZCapes
+{
+    item RefugeAshCloak
+    {
+        DisplayName = Refuge Ash Cape,
+        DisplayCategory = ProtectiveGear,
+        ItemType = base:clothing,
+        Weight = 1.1,
+        Icon = RZC_RefugeAshCloak,
+        BloodLocation = ShirtNoSleeves;Neck,
+        BodyLocation = base:scarf,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        ClothingItem = RZC_AshCloak,
+        CombatSpeedModifier = 0.99,
+        Insulation = 0.06,
+        WaterResistance = 0.02,
+        WindResistance = 0.05,
+        Tags = base:ignorezombiedensity,
+        WorldStaticModel = RZC_AshCloak_Ground,
+    }
+
+    model RZC_AshCloak_Ground
+    {
+        mesh = Static/Clothes/RZC_AshCloak_Ground,
+        texture = Clothes/RefugeZCapes/AshCloak/RefugeAshCloak,
+    }
+
+    craftRecipe RZC_MakeRefugeAshCloak
+    {
+        timedAction = SewingCloth,
+        time = 900,
+        Tags = InHandCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:2,
+        xpAward = Tailoring:10,
+        inputs
+        {
+            item 1 [RefugeZCapes.RefugeCloak] mode:destroy,
+            item 1 [Base.Charcoal],
+            item 1 tags[base:scissors;base:sharpknife] mode:keep flags[IsNotDull;SharpnessCheck],
+        }
+        outputs { item 1 RefugeZCapes.RefugeAshCloak, }
+    }
+}

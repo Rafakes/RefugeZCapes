@@ -1,0 +1,44 @@
+module RefugeZCapes
+{
+    item RefugeTatteredShawl
+    {
+        DisplayName = Refuge Tattered Cape,
+        DisplayCategory = ProtectiveGear,
+        ItemType = base:clothing,
+        Weight = 1.1,
+        Icon = RZC_RefugeTatteredShawl,
+        BloodLocation = ShirtNoSleeves;Neck,
+        BodyLocation = base:scarf,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        ClothingItem = RZC_TatteredShawl,
+        CombatSpeedModifier = 0.99,
+        Insulation = 0.05,
+        WaterResistance = 0,
+        WindResistance = 0.05,
+        Tags = base:ignorezombiedensity,
+        WorldStaticModel = RZC_TatteredShawl_Ground,
+    }
+
+    model RZC_TatteredShawl_Ground
+    {
+        mesh = Static/Clothes/RZC_TatteredShawl_Ground,
+        texture = Clothes/RefugeZCapes/TatteredShawl/RefugeTatteredShawl,
+    }
+
+    craftRecipe RZC_TearRefugeTatteredShawl
+    {
+        timedAction = SewingCloth,
+        time = 500,
+        Tags = InHandCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:1,
+        xpAward = Tailoring:5,
+        inputs
+        {
+            item 1 tags[base:scissors;base:sharpknife] mode:keep flags[IsNotDull;SharpnessCheck],
+            item 1 [RefugeZCapes.RefugeWoolShawl] mode:destroy,
+        }
+        outputs { item 1 RefugeZCapes.RefugeTatteredShawl, }
+    }
+}

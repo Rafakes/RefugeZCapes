@@ -1,0 +1,7 @@
+{
+    "Sandbox_RefugeZCapes": "RefugeZ Capes",
+    "Sandbox_RefugeZCapes_EnableLoot": "Spawn capes, shawls and wings in loot",
+    "Sandbox_RefugeZCapes_EnableLoot_tooltip": "Enabled by default. When off, this mod adds none of its items to world loot. Existing loot and crafting are unaffected.",
+    "Sandbox_RefugeZCapes_LootWeight": "Loot weight per item",
+    "Sandbox_RefugeZCapes_LootWeight_tooltip": "Default 0.005 is extremely rare. Higher values increase the chance in wardrobes and clothing stores; 0 disables loot."
+}

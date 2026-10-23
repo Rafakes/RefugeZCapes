@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+  <m_GUID>4d3f8d0d-c81c-58f0-b83d-ad56ee300182</m_GUID>
+  <m_MaleModel>Skinned/Clothes/RZC_DemonWings_M</m_MaleModel>
+  <m_FemaleModel>Skinned/Clothes/RZC_DemonWings_F</m_FemaleModel>
+  <m_Static>false</m_Static>
+  <m_AllowRandomHue>false</m_AllowRandomHue>
+  <m_AllowRandomTint>false</m_AllowRandomTint>
+  <m_AttachBone />
+  <textureChoices>Clothes/RefugeZCapes/DemonWings/RefugeDemonWings</textureChoices>
+</clothingItem>

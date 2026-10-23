@@ -1,0 +1,46 @@
+module RefugeZCapes
+{
+    item RefugeEclipseCloak
+    {
+        DisplayName = Refuge Eclipse Cape,
+        DisplayCategory = ProtectiveGear,
+        ItemType = base:clothing,
+        Weight = 1.4,
+        Icon = RZC_RefugeEclipseCloak,
+        BloodLocation = ShirtNoSleeves;Neck,
+        BodyLocation = base:scarf,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        ClothingItem = RZC_EclipseCloak,
+        CombatSpeedModifier = 0.99,
+        Insulation = 0.13,
+        WaterResistance = 0.1,
+        WindResistance = 0.12,
+        Tags = base:ignorezombiedensity,
+        WorldStaticModel = RZC_EclipseCloak_Ground,
+    }
+
+    model RZC_EclipseCloak_Ground
+    {
+        mesh = Static/Clothes/RZC_EclipseCloak_Ground,
+        texture = Clothes/RefugeZCapes/EclipseCloak/RefugeEclipseCloak,
+    }
+
+    craftRecipe RZC_KnitRefugeEclipseCloak
+    {
+        timedAction = Knitting,
+        time = 2900,
+        Tags = InHandCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:4,
+        xpAward = Tailoring:24,
+        inputs
+        {
+            item 1 tags[base:knittingneedles] mode:keep,
+            item 1 tags[base:sewingneedle] mode:keep flags[MayDegradeLight],
+            item 3 tags[base:thread],
+            item 7 [Base.Yarn],
+        }
+        outputs { item 1 RefugeZCapes.RefugeEclipseCloak, }
+    }
+}

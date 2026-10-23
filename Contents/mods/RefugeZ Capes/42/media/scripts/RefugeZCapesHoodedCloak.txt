@@ -1,0 +1,69 @@
+module RefugeZCapes
+{
+    item RefugeHoodedLongCloak
+    {
+        DisplayName = Refuge Hooded Long Wool Cape,
+        DisplayCategory = ProtectiveGear,
+        ItemType = base:clothing,
+        Weight = 1.5,
+        Icon = RZC_RefugeHoodedLongCloak,
+        BloodLocation = ShirtNoSleeves;Neck;FullHelmet,
+        BodyLocation = RefugeZCapes:HoodedCloak,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        ClothingItem = RZC_HoodedLongCloak,
+        ClothingExtraSubmenu = UpHoodie,
+        ClothingItemExtra = RefugeZCapes.RefugeHoodedLongCloakDown,
+        ClothingItemExtraOption = DownHoodie,
+        CombatSpeedModifier = 0.99,
+        Insulation = 0.15,
+        WaterResistance = 0.1,
+        WindResistance = 0.15,
+        Tags = base:ignorezombiedensity,
+        WorldStaticModel = RZC_HoodedLongCloak_Ground,
+    }
+    item RefugeHoodedLongCloakDown
+    {
+        DisplayName = Refuge Long Wool Cape (Hood Down),
+        DisplayCategory = ProtectiveGear,
+        ItemType = base:clothing,
+        Weight = 1.5,
+        Icon = RZC_RefugeHoodedLongCloakDown,
+        BloodLocation = ShirtNoSleeves;Neck,
+        BodyLocation = base:scarf,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        ClothingItem = RZC_HoodedLongCloakDown,
+        ClothingExtraSubmenu = DownHoodie,
+        ClothingItemExtra = RefugeZCapes.RefugeHoodedLongCloak,
+        ClothingItemExtraOption = UpHoodie,
+        CombatSpeedModifier = 0.99,
+        Insulation = 0.1,
+        WaterResistance = 0.1,
+        WindResistance = 0.1,
+        Tags = base:ignorezombiedensity,
+        WorldStaticModel = RZC_HoodedLongCloak_Ground,
+    }
+    model RZC_HoodedLongCloak_Ground
+    {
+        mesh = Static/Clothes/RZC_HoodedLongCloak_Ground,
+        texture = Clothes/RefugeZCapes/HoodedLongCloak/RefugeCloak,
+    }
+    craftRecipe RZC_KnitRefugeHoodedLongCloak
+    {
+        timedAction = Knitting,
+        time = 3000,
+        Tags = InHandCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:4,
+        xpAward = Tailoring:25,
+        inputs
+        {
+            item 1 tags[base:knittingneedles] mode:keep,
+            item 1 tags[base:sewingneedle] mode:keep flags[MayDegradeLight],
+            item 3 tags[base:thread],
+            item 7 [Base.Yarn],
+        }
+        outputs { item 1 RefugeZCapes.RefugeHoodedLongCloak, }
+    }
+}

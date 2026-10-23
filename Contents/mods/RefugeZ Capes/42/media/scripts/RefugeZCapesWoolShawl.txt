@@ -1,0 +1,46 @@
+module RefugeZCapes
+{
+    item RefugeWoolShawl
+    {
+        DisplayName = Refuge Wool Shawl,
+        DisplayCategory = ProtectiveGear,
+        ItemType = base:clothing,
+        Weight = 1.3,
+        Icon = RZC_RefugeWoolShawl,
+        BloodLocation = ShirtNoSleeves;Neck,
+        BodyLocation = base:scarf,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        ClothingItem = RZC_WoolShawl,
+        CombatSpeedModifier = 0.99,
+        Insulation = 0.1,
+        WaterResistance = 0.1,
+        WindResistance = 0.1,
+        Tags = base:ignorezombiedensity,
+        WorldStaticModel = RZC_WoolShawl_Ground,
+    }
+
+    model RZC_WoolShawl_Ground
+    {
+        mesh = Static/Clothes/RZC_WoolShawl_Ground,
+        texture = Clothes/RefugeZCapes/WoolShawl/RefugeCloak,
+    }
+
+    craftRecipe RZC_KnitRefugeWoolShawl
+    {
+        timedAction = Knitting,
+        time = 2600,
+        Tags = InHandCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:2,
+        xpAward = Tailoring:20,
+        inputs
+        {
+            item 1 tags[base:knittingneedles] mode:keep,
+            item 1 tags[base:sewingneedle] mode:keep flags[MayDegradeLight],
+            item 3 tags[base:thread],
+            item 6 [Base.Yarn],
+        }
+        outputs { item 1 RefugeZCapes.RefugeWoolShawl, }
+    }
+}

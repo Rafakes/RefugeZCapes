@@ -1,0 +1,277 @@
+module RefugeZCapes
+{
+    item RefugeCloak_Stag
+    {
+        DisplayName = Refuge Forest Stag Wool Cape,
+        DisplayCategory = ProtectiveGear,
+        ItemType = base:clothing,
+        Weight = 1.0,
+        Icon = RZC_RefugeCloak_Stag,
+        BloodLocation = ShirtNoSleeves;Neck,
+        BodyLocation = base:scarf,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        ClothingItem = RZC_Cloak_Stag,
+        CombatSpeedModifier = 0.99,
+        Insulation = 0.1,
+        WaterResistance = 0.1,
+        WindResistance = 0.1,
+        Tags = base:ignorezombiedensity,
+        WorldStaticModel = RZC_Cloak_Stag_Ground,
+    }
+
+    model RZC_Cloak_Stag_Ground
+    {
+        mesh = Static/Clothes/RZC_OwnCloak_Ground,
+        texture = Clothes/RefugeZCapes/CloakShort/RefugeCloak_Stag,
+    }
+
+    craftRecipe RZC_KnitRefugeCloak_Stag
+    {
+        timedAction = Knitting,
+        time = 2000,
+        Tags = InHandCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:4,
+        xpAward = Tailoring:15,
+        inputs
+        {
+            item 1 tags[base:knittingneedles] mode:keep,
+            item 1 tags[base:sewingneedle] mode:keep flags[MayDegradeLight],
+            item 2 tags[base:thread],
+            item 4 [Base.Yarn],
+        }
+        outputs { item 1 RefugeZCapes.RefugeCloak_Stag, }
+    }
+
+    item RefugeLongCloak_Stag
+    {
+        DisplayName = Refuge Forest Stag Long Wool Cape,
+        DisplayCategory = ProtectiveGear,
+        ItemType = base:clothing,
+        Weight = 1.3,
+        Icon = RZC_RefugeLongCloak_Stag,
+        BloodLocation = ShirtNoSleeves;Neck,
+        BodyLocation = base:scarf,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        ClothingItem = RZC_LongCloak_Stag,
+        CombatSpeedModifier = 0.99,
+        Insulation = 0.1,
+        WaterResistance = 0.1,
+        WindResistance = 0.1,
+        Tags = base:ignorezombiedensity,
+        WorldStaticModel = RZC_LongCloak_Stag_Ground,
+    }
+
+    model RZC_LongCloak_Stag_Ground
+    {
+        mesh = Static/Clothes/RZC_LongCloak_Ground,
+        texture = Clothes/RefugeZCapes/CloakLong/RefugeCloak_Stag,
+    }
+
+    craftRecipe RZC_KnitRefugeLongCloak_Stag
+    {
+        timedAction = Knitting,
+        time = 2600,
+        Tags = InHandCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:4,
+        xpAward = Tailoring:20,
+        inputs
+        {
+            item 1 tags[base:knittingneedles] mode:keep,
+            item 1 tags[base:sewingneedle] mode:keep flags[MayDegradeLight],
+            item 3 tags[base:thread],
+            item 6 [Base.Yarn],
+        }
+        outputs { item 1 RefugeZCapes.RefugeLongCloak_Stag, }
+    }
+
+}
+
+
+module RefugeZCapes
+{
+    item RefugeCloak_Sun
+    {
+        DisplayName = Refuge Golden Sun Wool Cape,
+        DisplayCategory = ProtectiveGear,
+        ItemType = base:clothing,
+        Weight = 1.0,
+        Icon = RZC_RefugeCloak_Sun,
+        BloodLocation = ShirtNoSleeves;Neck,
+        BodyLocation = base:scarf,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        ClothingItem = RZC_Cloak_Sun,
+        CombatSpeedModifier = 0.99,
+        Insulation = 0.1,
+        WaterResistance = 0.1,
+        WindResistance = 0.1,
+        Tags = base:ignorezombiedensity,
+        WorldStaticModel = RZC_Cloak_Sun_Ground,
+    }
+
+    model RZC_Cloak_Sun_Ground
+    {
+        mesh = Static/Clothes/RZC_OwnCloak_Ground,
+        texture = Clothes/RefugeZCapes/CloakShort/RefugeCloak_Sun,
+    }
+
+    craftRecipe RZC_KnitRefugeCloak_Sun
+    {
+        timedAction = Knitting,
+        time = 2000,
+        Tags = InHandCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:4,
+        xpAward = Tailoring:15,
+        inputs
+        {
+            item 1 tags[base:knittingneedles] mode:keep,
+            item 1 tags[base:sewingneedle] mode:keep flags[MayDegradeLight],
+            item 2 tags[base:thread],
+            item 4 [Base.Yarn],
+        }
+        outputs { item 1 RefugeZCapes.RefugeCloak_Sun, }
+    }
+
+    item RefugeLongCloak_Sun
+    {
+        DisplayName = Refuge Golden Sun Long Wool Cape,
+        DisplayCategory = ProtectiveGear,
+        ItemType = base:clothing,
+        Weight = 1.3,
+        Icon = RZC_RefugeLongCloak_Sun,
+        BloodLocation = ShirtNoSleeves;Neck,
+        BodyLocation = base:scarf,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        ClothingItem = RZC_LongCloak_Sun,
+        CombatSpeedModifier = 0.99,
+        Insulation = 0.1,
+        WaterResistance = 0.1,
+        WindResistance = 0.1,
+        Tags = base:ignorezombiedensity,
+        WorldStaticModel = RZC_LongCloak_Sun_Ground,
+    }
+
+    model RZC_LongCloak_Sun_Ground
+    {
+        mesh = Static/Clothes/RZC_LongCloak_Ground,
+        texture = Clothes/RefugeZCapes/CloakLong/RefugeCloak_Sun,
+    }
+
+    craftRecipe RZC_KnitRefugeLongCloak_Sun
+    {
+        timedAction = Knitting,
+        time = 2600,
+        Tags = InHandCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:4,
+        xpAward = Tailoring:20,
+        inputs
+        {
+            item 1 tags[base:knittingneedles] mode:keep,
+            item 1 tags[base:sewingneedle] mode:keep flags[MayDegradeLight],
+            item 3 tags[base:thread],
+            item 6 [Base.Yarn],
+        }
+        outputs { item 1 RefugeZCapes.RefugeLongCloak_Sun, }
+    }
+
+}
+
+
+module RefugeZCapes
+{
+    item RefugeCloak_Raven
+    {
+        DisplayName = Refuge Silver Raven Wool Cape,
+        DisplayCategory = ProtectiveGear,
+        ItemType = base:clothing,
+        Weight = 1.0,
+        Icon = RZC_RefugeCloak_Raven,
+        BloodLocation = ShirtNoSleeves;Neck,
+        BodyLocation = base:scarf,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        ClothingItem = RZC_Cloak_Raven,
+        CombatSpeedModifier = 0.99,
+        Insulation = 0.1,
+        WaterResistance = 0.1,
+        WindResistance = 0.1,
+        Tags = base:ignorezombiedensity,
+        WorldStaticModel = RZC_Cloak_Raven_Ground,
+    }
+
+    model RZC_Cloak_Raven_Ground
+    {
+        mesh = Static/Clothes/RZC_OwnCloak_Ground,
+        texture = Clothes/RefugeZCapes/CloakShort/RefugeCloak_Raven,
+    }
+
+    craftRecipe RZC_KnitRefugeCloak_Raven
+    {
+        timedAction = Knitting,
+        time = 2000,
+        Tags = InHandCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:4,
+        xpAward = Tailoring:15,
+        inputs
+        {
+            item 1 tags[base:knittingneedles] mode:keep,
+            item 1 tags[base:sewingneedle] mode:keep flags[MayDegradeLight],
+            item 2 tags[base:thread],
+            item 4 [Base.Yarn],
+        }
+        outputs { item 1 RefugeZCapes.RefugeCloak_Raven, }
+    }
+
+    item RefugeLongCloak_Raven
+    {
+        DisplayName = Refuge Silver Raven Long Wool Cape,
+        DisplayCategory = ProtectiveGear,
+        ItemType = base:clothing,
+        Weight = 1.3,
+        Icon = RZC_RefugeLongCloak_Raven,
+        BloodLocation = ShirtNoSleeves;Neck,
+        BodyLocation = base:scarf,
+        CanHaveHoles = false,
+        ChanceToFall = 0,
+        ClothingItem = RZC_LongCloak_Raven,
+        CombatSpeedModifier = 0.99,
+        Insulation = 0.1,
+        WaterResistance = 0.1,
+        WindResistance = 0.1,
+        Tags = base:ignorezombiedensity,
+        WorldStaticModel = RZC_LongCloak_Raven_Ground,
+    }
+
+    model RZC_LongCloak_Raven_Ground
+    {
+        mesh = Static/Clothes/RZC_LongCloak_Ground,
+        texture = Clothes/RefugeZCapes/CloakLong/RefugeCloak_Raven,
+    }
+
+    craftRecipe RZC_KnitRefugeLongCloak_Raven
+    {
+        timedAction = Knitting,
+        time = 2600,
+        Tags = InHandCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:4,
+        xpAward = Tailoring:20,
+        inputs
+        {
+            item 1 tags[base:knittingneedles] mode:keep,
+            item 1 tags[base:sewingneedle] mode:keep flags[MayDegradeLight],
+            item 3 tags[base:thread],
+            item 6 [Base.Yarn],
+        }
+        outputs { item 1 RefugeZCapes.RefugeLongCloak_Raven, }
+    }
+
+}
